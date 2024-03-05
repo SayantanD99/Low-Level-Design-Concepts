@@ -8,7 +8,8 @@ import java.util.concurrent.Future;
 
 public class Main {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        List<Integer> a = List.of(8,1,7,5,6,4,3,9);
+
+        List<Integer> a = List.of(1, 5, 6, 3, 2, 4, 7, 8, 9, 10);
 
         ExecutorService es = Executors.newFixedThreadPool(10);
         Sorter s = new Sorter(a, es);
